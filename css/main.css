@@ -475,6 +475,10 @@ textarea {
      flex-flow: row nowrap;
    }
 
+   .features h1{
+     width: 90%;
+   }
+
    .features .features-items{
      flex-flow: row wrap;
      width: 90%;
@@ -494,6 +498,10 @@ textarea {
    }
 
    .reviews .content-wrapper{
+     width: 90%;
+   }
+
+   .reviews h1{
      width: 90%;
    }
 
@@ -571,9 +579,6 @@ textarea {
       padding-left: 10%;
     }
 
-
-
-
    /* ==========================================================================
                                   FAQ Page
   ========================================================================== */
@@ -607,6 +612,68 @@ textarea {
 
    @media only screen and (min-width: 1200px) {
    /*Desktop styles here*/
+   /*----- Homepage -----*/
+   /* Hero Area */
+   .hero-area h1{
+     width: 30%;
+     padding-right: 60%;
+   }
+
+   /* Aside */
+   aside .form-description{
+     width: 35%;
+     padding-left: 10%;
+   }
+
+   aside .form{
+     width: 35%;
+     padding-left: 10%;
+   }
+
+   /* Features */
+   .features-items article{
+     width: 33%;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     flex-basis: 33%;
+   }
+
+   /* Reviews */
+   .reviews h2{
+     width: 50%;
+     padding-right: 50%;
+   }
+
+   /* ==========================================================================
+                                 About Page
+  ========================================================================== */
+  .content-wrapper h1 {
+    width: 50%;
+    padding-right: 50%;
+   }
+
+   .general-info, .chat-info {
+       width: 35%;
+       flex-basis: 35%;
+       flex-flow: column;
+    }
+
+    .general-info{
+      padding-right: 20%;
+    }
+
+    .general-info h3{
+      width: 100%;
+    }
+
+    .general-info address{
+      width: 100%;
+    }
+
+    .chat-info {
+      padding-left: 10%;
+    }
    }
 
 /* ==========================================================================
