@@ -86,18 +86,67 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-   body{
-    max-width: 100%;
-   }
+   */
+/* General Styles */
 
-   .content-wrapper{
-     width: 90%;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     flex-flow: row wrap;
-     margin: 50px 0;
-   }
+html {
+  font-size: 16px;
+}
+
+body {
+  max-width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+a {
+  color: #e2e3ed;
+  text-decoration: none;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.75em;
+  font-weight: normal;
+}
+
+h2,
+h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.125em;
+  font-weight: normal;
+}
+
+p {
+  line-height: normal;
+}
+
+img {
+
+}
+
+figure {
+
+}
+
+address {
+  font-style: normal;
+}
+
+.content-wrapper {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  margin: 50px 0;
+
+}
 
     /* -------------------- Base Header - Footer Styles -------------------- */
     header,
@@ -211,7 +260,7 @@ textarea {
     }
 
     .reviews h3 {
-      width: 55%;
+      width: 30%;
       margin: 20px 0;
     }
 
@@ -443,7 +492,7 @@ textarea {
      flex-flow: row nowrap;
    }
 
-   .hero-area h1{
+   .hero-area .content-wrapper h1{
      width: 50%;
      padding-right: 40%;
    }
@@ -614,7 +663,7 @@ textarea {
    /*Desktop styles here*/
    /*----- Homepage -----*/
    /* Hero Area */
-   .hero-area h1{
+   .hero-area .content-wrapper h1{
      width: 30%;
      padding-right: 60%;
    }
