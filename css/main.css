@@ -97,6 +97,7 @@ body {
   max-width: 100%;
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
+  color: #e2e3ed;
 }
 
 ul,
@@ -160,6 +161,8 @@ address {
     /*----- Header -----*/
     header{
       padding: 15px 0;
+      background-color: #212322;
+      margin: 0;
     }
 
     header .content-wrapper{
@@ -175,13 +178,16 @@ address {
       display: flex;
       justify-content: center;
       align-items: center;
+      padding-left: 10%;
     }
 
     .header-divider{
       height: 1px;
+      border-top: 1px;
       margin: 10px 0 20px 0;
       flex-flow: row wrap;
       width: 100%;
+      color: #e2e3ed;
     }
 
     header nav{
@@ -190,12 +196,17 @@ address {
       display: flex;
       justify-content: space-around;
       align-items: center;
+      padding-right: 10%;
     }
 
     header nav ul {
       display: flex;
       justify-content: space-around;
       width: 100%;
+    }
+
+    header nav ul li{
+      font-weight: bold;
     }
 
     /* -------------------- Mobile Styles - Homepage -------------------- */
@@ -214,6 +225,33 @@ address {
       justify-content: center;
       align-items: center;
       flex-flow: row wrap;
+      background-color: #537159;
+    }
+
+    aside .form {
+      margin-top: 20px;
+    }
+
+    input[type=text] {
+      box-sizing: border-box;
+      width: 100%;
+      color: #2a423a;
+      font-style: italic;
+      padding: 1em;
+    }
+
+    input[type=button] {
+      width: 100%;
+      padding: 20px 0;
+      margin-top: 20px;
+      background-color: #2a423a;
+      font-family: 'Poppins', Helvetica, Arial, sans-serif;
+      font-weight: 500;
+      font-size: 1.125em;
+      color: #e2e3ed;
+      border: none;
+      text-align: center;
+      text-transform: uppercase;
     }
 
     /* Features */
@@ -245,6 +283,7 @@ address {
       justify-content: center;
       align-items: center;
       margin: 30px 0;
+      text-align: center;
     }
 
     /* Reviews */
@@ -253,6 +292,7 @@ address {
       justify-content: center;
       align-items: center;
       flex-flow: row wrap;
+      background-color: #2b423a;
     }
 
     .reviews h1 {
@@ -274,6 +314,7 @@ address {
     /*----- Footer -----*/
     footer{
       flex-direction: column;
+      background-color: #212322;
     }
 
     footer .content-wrapper{
@@ -287,6 +328,7 @@ address {
 
     footer .contact {
       margin-bottom: 50px;
+      text-align: center;
     }
 
     footer .social-icons {
@@ -314,6 +356,7 @@ address {
       justify-content: center;
       align-items: center;
       flex-flow: row wrap;
+      background-color: #537159;
     }
 
     .contact-section{
@@ -321,6 +364,11 @@ address {
       justify-content: center;
       align-items: center;
       flex-flow: row wrap;
+      background-color: #2b423a;
+    }
+
+    .general-info, .chat-info {
+      width: 100%;
     }
 
 
@@ -332,6 +380,7 @@ address {
       justify-content: center;
       align-items: center;
       flex-flow: row wrap;
+      background-color: #537159;
     }
 
     .faq h1{
@@ -348,6 +397,10 @@ address {
 
     .faq-content {
       margin-bottom: 50px;
+    }
+
+    .faq-reply{
+      padding-bottom: 30px;
     }
 
 
@@ -609,31 +662,29 @@ address {
 
    .content-wrapper h1 {
       padding-right: 10%;
+      font-size: 2.25em;
    }
 
    .general-info, .chat-info {
-       width: 35%;
+       width: 40%;
        display: flex;
        justify-content: space-between;
        align-items: center;
        flex-flow: row wrap;
-       flex-basis: 35%;
+       flex-basis: 40%;
     }
 
     .general-info{
       padding-right: 20%;
     }
 
-    .chat-info {
-      padding-left: 10%;
+    /* ==========================================================================
+                                   FAQ Page
+   ========================================================================== */
+    .faq h1{
+      width: 100%;
+      font-size: 2.25em;
     }
-
-   /* ==========================================================================
-                                  FAQ Page
-  ========================================================================== */
-   .faq h1{
-     width: 100%;
-   }
 
    .faq .content-wrapper{
      width: 90%;
@@ -698,8 +749,8 @@ address {
                                  About Page
   ========================================================================== */
   .content-wrapper h1 {
-    width: 50%;
-    padding-right: 50%;
+    width: 100%;
+    font-size: 3.75em;
    }
 
    .general-info, .chat-info {
@@ -722,6 +773,14 @@ address {
 
     .chat-info {
       padding-left: 10%;
+    }
+
+    /* ==========================================================================
+                                   FAQ Page
+   ========================================================================== */
+    .faq h1{
+      font-size: 2.875em;
+      width: 100%;
     }
    }
 
