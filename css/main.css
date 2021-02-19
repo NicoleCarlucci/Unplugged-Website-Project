@@ -128,11 +128,11 @@ p {
 }
 
 img {
-
+  width: 100%;
 }
 
 figure {
-
+  margin: 0;
 }
 
 address {
@@ -173,13 +173,13 @@ address {
       margin: 0;
     }
 
-    header img{
+    header figure{
       width: 80%;
       display: flex;
       justify-content: center;
       align-items: center;
-      padding-left: 10%;
-    }
+      flex-flow: row wrap;
+     }
 
     .header-divider{
       height: 1px;
@@ -217,6 +217,12 @@ address {
       justify-content: center;
       align-items: center;
       flex-flow: row wrap;
+      background: url('../img/retreat-image.jpg') center no-repeat #333;
+      background-size: cover;
+    }
+
+    .hero-area h1{
+      margin-bottom: 90%;
     }
 
     /* Aside */
@@ -260,6 +266,8 @@ address {
       justify-content: center;
       align-items: center;
       flex-flow: row wrap;
+      background: url('../img/main-background.jpg') center no-repeat #333;
+      background-size: cover;
     }
 
     .features h1 {
@@ -304,6 +312,13 @@ address {
       margin: 20px 0;
     }
 
+    .reviews figure{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: row wrap;
+    }
+
     .reviews article div{
       display: flex;
       justify-content: center;
@@ -326,7 +341,7 @@ address {
       margin: 0;
     }
 
-    footer .contact {
+    footer .contact, footer .social {
       margin-bottom: 50px;
       text-align: center;
     }
@@ -502,7 +517,7 @@ address {
      justify-content: space-between;
      align-items: center;
      flex-flow: row nowrap;
-     width: 90%;
+     width: 100%;
    }
 
    /*----- Header -----*/
@@ -511,11 +526,16 @@ address {
      justify-content: space-between;
      align-items: center;
      flex-flow: row nowrap;
-     margin-left: 10%;
+     width: 100%;
    }
 
-   header img{
-     width: 40%;
+   header figure{
+     width: 30%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-flow: row wrap;
+     padding-left: 10%;
    }
 
    .header-divider{
@@ -523,20 +543,17 @@ address {
    }
 
    header nav{
-     width: 20%;
+     width: 30%;
      flex-flow: row nowrap;
      display: flex;
-     justify-content: space-between;
+     justify-content: space-around;
      align-items: center;
+     margin-right: 0;
    }
 
    header nav ul {
      display: flex;
-     justify-content: space-between;
-   }
-
-   header nav ul li{
-     padding-right: 10px;
+     justify-content: space-around;
    }
 
    /*----- Homepage -----*/
@@ -546,8 +563,9 @@ address {
    }
 
    .hero-area .content-wrapper h1{
-     width: 50%;
-     padding-right: 40%;
+     width: 70%;
+     padding-right: 20%;
+     margin-bottom: 40%;
    }
 
    /* Aside */
@@ -559,31 +577,44 @@ address {
    }
 
    aside .content-wrapper{
-     width: 90%;
+     width: 100%;
    }
 
    aside .form-description{
-     width: 40%;
-     padding-left: 10%;
+     width: 35%;
+     padding-right: 10%;
    }
 
    aside .form{
      width: 40%;
-     padding-left: 10%;
+   }
+
+   aside h3{
+     font-size: 1.25em;
    }
 
    /* Features */
    .features{
      flex-flow: row nowrap;
+     width: 100%;
+   }
+
+   .features .content-wrapper{
+     width: 90%;
    }
 
    .features h1{
-     width: 90%;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-flow: row wrap;
+     padding-left: 7%;
    }
 
    .features .features-items{
      flex-flow: row wrap;
-     width: 90%;
+     width: 100%;
    }
 
    .features-items article{
@@ -600,26 +631,34 @@ address {
    }
 
    .reviews .content-wrapper{
-     width: 90%;
+     width: 100%;
    }
 
    .reviews h1{
-     width: 90%;
+     width: 70%;
+   }
+
+   .reviews h2{
+     font-size: 1.5em;
+     line-height: 1em;
    }
 
    .reviews article{
-     width: 90%;
+     width: 100%;
      display: flex;
-     justify-content: space-between;
+     justify-content: center;
      align-items: center;
    }
 
-   .reviews img{
-     width: 40%;
+   .reviews figure{
+     width: 55%;
+     padding-left: 10%;
+     padding-right: 2%;
    }
 
    .reviews article div{
-     width: 40%;
+     width: 50%;
+     padding-right: 10%;
    }
 
    /*----- Footer -----*/
@@ -628,16 +667,53 @@ address {
    }
 
    footer .content-wrapper{
-     width: 90%;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-flow: row wrap;
+  }
+
+  footer .content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row wrap;
+    margin: 0;
+    padding: 0;
+  }
+
+   footer .contact div{
+     width: 50%;
+   }
+
+   footer address{
+     width: 100%;
+   }
+
+   footer .social div{
+     width: 50%;
+
    }
 
    footer .social-icons {
+     width: 100%;
      display: flex;
      justify-content: space-between;
      align-items: center;
+     margin-bottom: 50px;
    }
 
    footer .social-icons p {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+
+   footer .copyright{
+     width: 100%;
+     flex-flow: row wrap;
      display: flex;
      justify-content: center;
      align-items: center;
@@ -657,12 +733,11 @@ address {
    }
 
    .contact-section .content-wrapper h1 {
-       width: 90%;
+       font-size: 2.5em;
    }
 
    .content-wrapper h1 {
-      padding-right: 10%;
-      font-size: 2.25em;
+      font-size: 2.5em;
    }
 
    .general-info, .chat-info {
@@ -678,20 +753,29 @@ address {
       padding-right: 20%;
     }
 
+    .chat-info{
+      margin-bottom: 20px;
+    }
+
+    .general-info h3, .chat-info h3{
+      font-size: 1.5em;
+    }
+
     /* ==========================================================================
                                    FAQ Page
    ========================================================================== */
     .faq h1{
-      width: 100%;
+      width: 90%;
       font-size: 2.25em;
     }
 
    .faq .content-wrapper{
-     width: 90%;
+     width: 100%;
      margin: 50px 0 0 0;
    }
 
    .faq-content {
+     width: 90%;
      margin-bottom: 50px;
      display: flex;
      justify-content: space-between;
@@ -713,24 +797,36 @@ address {
    @media only screen and (min-width: 1200px) {
    /*Desktop styles here*/
    /*----- Homepage -----*/
+   /* Header */
+   header figure{
+     width: 20%;
+   }
+
    /* Hero Area */
    .hero-area .content-wrapper h1{
-     width: 30%;
-     padding-right: 60%;
+     width: 70%;
    }
 
    /* Aside */
    aside .form-description{
      width: 35%;
-     padding-left: 10%;
+     padding-right: 10%;
    }
 
    aside .form{
-     width: 35%;
-     padding-left: 10%;
+     width: 40%;
    }
 
+   aside h3{
+     font-size: 2.188em;
+   }
+
+
    /* Features */
+   .features .content-wrapper{
+     width: 90%;
+   }
+
    .features-items article{
      width: 33%;
      display: flex;
@@ -740,10 +836,38 @@ address {
    }
 
    /* Reviews */
-   .reviews h2{
-     width: 50%;
-     padding-right: 50%;
+   .reviews .content-wrapper{
+     width: 80%;
    }
+
+   .reviews h2{
+     font-size: 1.75em;
+     line-height: 1em;
+     width: 100%;
+
+   }
+
+   .reviews article{
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+
+   .reviews figure{
+     width: 50%;
+     padding-right: 10%;
+   }
+
+   .reviews article div{
+     width: 50%;
+     padding-right: 10%;
+   }
+
+    /* Footer */
+    footer h3{
+      font-size: 2em;
+    }
 
    /* ==========================================================================
                                  About Page
@@ -751,6 +875,10 @@ address {
   .content-wrapper h1 {
     width: 100%;
     font-size: 3.75em;
+   }
+
+   .contact-section .content-wrapper h1{
+     font-size: 3.75em;
    }
 
    .general-info, .chat-info {
@@ -763,21 +891,30 @@ address {
       padding-right: 20%;
     }
 
-    .general-info h3{
-      width: 100%;
-    }
-
     .general-info address{
       width: 100%;
     }
 
-    .chat-info {
-      padding-left: 10%;
+    .chat-info address{
+      width: 100%;
+    }
+
+    .general-info h3, .chat-info h3{
+      font-size: 2em;
+      width: 100%;
     }
 
     /* ==========================================================================
                                    FAQ Page
    ========================================================================== */
+    .faq .content-wrapper{
+      width: 90%;
+    }
+
+    .faq-content{
+      width: 100%;
+    }
+
     .faq h1{
       font-size: 2.875em;
       width: 100%;
