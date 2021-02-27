@@ -756,6 +756,14 @@ address {
       font-size: 2.5em;
    }
 
+   .map figure {
+     width: 100%;
+     height: 0;
+     padding-bottom: 50%;
+     overflow: hidden;
+     position: relative;
+   }
+
    .general-info, .chat-info {
        width: 40%;
        display: flex;
@@ -895,6 +903,14 @@ address {
 
    .contact-section .content-wrapper h1{
      font-size: 3.75em;
+   }
+
+   .map figure {
+     width: 100%;
+     height: 0;
+     padding-bottom: 40%;
+     overflow: hidden;
+     position: relative;
    }
 
    .general-info, .chat-info {
