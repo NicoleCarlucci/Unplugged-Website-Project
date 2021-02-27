@@ -373,14 +373,31 @@ address {
 
     footer .social-icons {
       display: flex;
-      justify-content: space-around;
+      justify-content: center;
       align-items: center;
+      text-align: center;
+      flex-flow: row nowrap;
+      width: 100%;
     }
 
     footer .social-icons p {
+      width: 30%;
       display: flex;
       justify-content: center;
       align-items: center;
+      text-align: center;
+      padding-left: 3%;
+    }
+
+    footer .social-icons i {
+      width: 100%;
+      font-size: 2.188em;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #537159;
     }
 
     footer .copyright {
@@ -705,7 +722,7 @@ address {
 
    /*----- Footer -----*/
    footer{
-     flex-direction: row nowrap;
+     flex-direction: column;
    }
 
    footer .content-wrapper{
@@ -716,7 +733,7 @@ address {
      flex-flow: row wrap;
   }
 
-  footer .content{
+  footer .footer-content{
     width: 100%;
     display: flex;
     justify-content: center;
@@ -726,31 +743,51 @@ address {
     padding: 0;
   }
 
-   footer .contact div{
-     width: 50%;
-   }
+  footer .contact{
+    width: 35%;
+  }
 
    footer address{
      width: 100%;
    }
 
-   footer .social div{
-     width: 50%;
-
+   footer .social{
+     width: 35%;
+     padding-left: 7%;
    }
 
    footer .social-icons {
-     width: 100%;
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-     margin-bottom: 50px;
-   }
-
-   footer .social-icons p {
      display: flex;
      justify-content: center;
      align-items: center;
+     text-align: center;
+     flex-flow: row nowrap;
+     width: 100%;
+    }
+
+   footer .social-icons p {
+     width: 30%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     padding-right: 2%;
+     padding-left: 2%;
+   }
+
+   footer .social-icons i {
+     width: 100%;
+     font-size: 2.188em;
+     text-align: center;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     color: #537159;
+   }
+
+   footer .contact h3, footer .social h3{
+     font-size: 1.5em;
    }
 
    footer .copyright{
@@ -895,7 +932,6 @@ address {
      font-size: 1.75em;
      line-height: 1em;
      width: 100%;
-
    }
 
    .reviews article{
@@ -916,9 +952,18 @@ address {
    }
 
     /* Footer */
-    footer h3{
+    footer .contact h3, footer .social h3{
       font-size: 2em;
     }
+
+    footer .social-icons p {
+      padding-right: 0;
+      padding-left: 0;
+      margin-left: 0;
+      margin-right: 0;
+      width: 15%;
+    }
+
 
    /* ==========================================================================
                                  About Page
