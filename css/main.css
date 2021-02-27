@@ -292,6 +292,31 @@ address {
       align-items: center;
       margin: 30px 0;
       text-align: center;
+      flex-flow: column;
+    }
+
+    .features-items article .fontawesome-icon{
+      width: 100%;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column;
+    }
+
+    .features i {
+      width: 100%;
+      font-size: 3.75em;
+      margin-bottom: 40px;
+    }
+
+    .features-items article .features-item-description{
+      width: 100%;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column;
     }
 
     /* Reviews */
@@ -634,11 +659,12 @@ address {
    }
 
    .features-items article{
-     width: 40%;
+     width: 35%;
      display: flex;
      justify-content: space-between;
      align-items: center;
-     flex-basis: 40%;
+     flex-basis: 35%;
+     padding-left: 7%;
    }
 
    /* Reviews */
@@ -852,11 +878,12 @@ address {
    }
 
    .features-items article{
-     width: 33%;
+     width: 20%;
      display: flex;
      justify-content: space-between;
      align-items: center;
-     flex-basis: 33%;
+     flex-basis: 20%;
+     padding-left: 7%;
    }
 
    /* Reviews */
